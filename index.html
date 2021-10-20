@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta nombre="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventario</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Inventario</h1>
+      <p class="azul">Inventario lista enlazada</p>
+    </div>
+
+    <div class="content">
+      <div class="left">
+        <h2>Agregar/Modificar productos</h2>
+        <div class="content-info">
+          <form>
+            <div class="field">
+              <label>Id de producto:</label>
+              <input id="id" type="number" size="35" />
+              <input class ="button" id="btnNav" type="button" value="Buscar" />
+              <input class ="button" id="btnEliminar" type="button" value="Eliminar" />
+            </div>
+            <div class="field">
+              <label>Nombre:</label>
+              <input id="nombre" type="text" size="35" />
+            </div>
+            <div class="field">
+              <label>Cantidad:</label>
+              <input id="cantidad" type="number" />
+            </div>
+            <div class="field">
+              <label>Precio:</label>
+              <input id="costo" type="number" />
+            </div>
+            <div class="field">
+              <input class="button" id="btnRegistrar" type="button" value="Registrar" />
+              <br>
+              <input class="button" id="btnInsertar" type="button" value="Insertar" />
+              <input id="insertValue" type="number">
+              <br>
+              <input class="button" id="btnListar" type="button" value="Listar" />
+              <input class="button" id="btnListarInverso" type="button" value="Listar Inverso" />
+            </div>
+            <div class="field">
+              <h2>Tabla productos</h2>
+              <table id="tbProducts">
+                <tr><th id="producto">Producto</th><th id="id">ID</th><th id="cantidad">Cantidad</th><th id="costo">Precio</th><th id="totalPrice">$Total</th></tr>
+              </table>
+            </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="right">
+        <div class="content-info">
+          <h2>Acciones</h2>
+          <div id="acciones"></div>
+        </div>
+      </div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
